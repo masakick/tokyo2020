@@ -4,8 +4,6 @@ PVector rectA = new PVector(radius*((2+sqrt(3))/(sqrt(6)+sqrt(2))),radius/(sqrt(
 PVector rectB = new PVector(radius*sqrt(3)/2.0,radius*0.5);
 PVector rectC = new PVector(radius/sqrt(2),radius/sqrt(2));
 
-PVector defv = new PVector(100,100);
-
 void setup(){
   size(900,900);
   noLoop();
