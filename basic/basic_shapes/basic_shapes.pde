@@ -8,10 +8,14 @@ PVector defv = new PVector(100,100);
 
 void setup(){
   size(400,400);
+  noStroke();
   noLoop();
 }
 
 void draw(){
+  
+  //Aの三角形
+  fill(0,0,255);
   beginShape();
   vertex(defv.x,defv.y);
   vertex(defv.x+rectA.x,defv.y);
@@ -20,6 +24,8 @@ void draw(){
   
   defv = new PVector(100,200);
   
+  //Bの三角形
+  fill(255,0,0);
   beginShape();
   vertex(defv.x,defv.y);
   vertex(defv.x+rectB.x,defv.y);
@@ -28,22 +34,30 @@ void draw(){
   
   defv = new PVector(100,300);
   
+  //Cの三角形
+  fill(0,128,32);
   beginShape();
   vertex(defv.x,defv.y);
   vertex(defv.x+rectC.x,defv.y);
   vertex(defv.x+rectC.x,defv.y+rectC.y);
   endShape(CLOSE);
   
+  //Aの四角形
+  fill(0,0,255);
   pushMatrix();
   translate(200,100);
   drawRect(rectA);
   popMatrix();
   
+  //Bの四角形
+  fill(255,0,0);
   pushMatrix();
   translate(200,200);
   drawRect(rectB);
   popMatrix();
   
+  //Cの四角形
+  fill(0,128,32);
   pushMatrix();
   translate(200,300);
   drawRect(rectC);
