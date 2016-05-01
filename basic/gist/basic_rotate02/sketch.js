@@ -1,8 +1,8 @@
 
 var radius = 70;
-var rectA = new p5.Vector(radius*((2+Math.sqrt(3))/(Math.sqrt(6)+Math.sqrt(2))),radius/(Math.sqrt(6)+Math.sqrt(2)));
-var rectB = new p5.Vector(radius*Math.sqrt(3)/2.0,radius*0.5);
-var rectC = new p5.Vector(radius/Math.sqrt(2),radius/Math.sqrt(2));
+var rectA = new p5.Vector(radius*Math.cos(15*Math.PI/180),radius*Math.sin(15*Math.PI/180));
+var rectB = new p5.Vector(radius*Math.cos(30*Math.PI/180),radius*Math.sin(30*Math.PI/180));
+var rectC = new p5.Vector(radius*Math.cos(45*Math.PI/180),radius*Math.sin(45*Math.PI/180));
 
 function setup() {
   createCanvas(900,900);
