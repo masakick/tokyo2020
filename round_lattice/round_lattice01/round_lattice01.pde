@@ -1,7 +1,7 @@
-int VNUM = 36;  // vnum*integer is must be 180 
+int VNUM = 36;  // 6 or over
 float RADIUS = 30;
-int rotateAng = 180/VNUM;
-int rectTypeNum = 90/rotateAng - 1;
+float rotateAng = 180/float(VNUM);
+int rectTypeNum = int(90/rotateAng - 1);
 PVector[] rectVec = new PVector[rectTypeNum];
 
 void setup(){
